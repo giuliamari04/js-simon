@@ -1,0 +1,36 @@
+body {
+    text-align: center;
+}
+
+
+
+#input-container {
+    /* background-color: #fff; */
+    /* border: 1px solid #ccc; */
+    /* border-radius: 5px; */
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#numbers {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#number-input {
+    font-size: 18px;
+    padding: 5px;
+    margin: 10px;
+
+}
+
+#submit-button {
+    cursor: pointer;
+}
+
+#result {
+    font-size: 18px;
+    margin-top: 20px;
+}
