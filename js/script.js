@@ -4,6 +4,7 @@ function memory() {
     const numbers = document.getElementById('numbers');
     const inputContainer = document.getElementById('input-container');
     const numberInput = document.getElementById('number-input');
+    const clock = document.querySelector('.orologio');
     const btn = document.getElementById('button');
     const result = document.getElementById('result');
 
@@ -25,7 +26,7 @@ function memory() {
 
     numbers.innerHTML = `
     <h2>ecco l'array di numeri:</h2> 
-    ${numbersArray.join(" ")}
+    <strong> ${numbersArray.join(" ")} </strong>
     </br>
     <p>hai ${numSecondi} secondi per memorizzarlo</p>
     `;
@@ -33,6 +34,7 @@ function memory() {
     setTimeout(function () {
         numbers.textContent = "";
         inputContainer.classList.remove('d-none');
+        clock.classList.add('d-none');
         numberInput.focus();
     }, numSecondi * 1000);
 
