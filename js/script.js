@@ -66,7 +66,7 @@ function memory() {
         //oppure si puè anche scrivere così...
         //const correctNumbers = numbersArray.filter(num => userNumbers.includes(num));
 
-        result.innerHTML = `<h1>Hai indovinato ${correctNumbers.length} numeri:</h1> <p>${correctNumbers.join(", ")}</p> </br> <p>l'array corretto è ${numbersArray}</p>`;
+        result.innerHTML = `<h1>Hai indovinato ${correctNumbers.length} numeri:</h1> <p>${correctNumbers.join(", ")}</p> </br> <p>l'array corretto è <strong>${numbersArray}</strong></p>`;
     });
 };
 

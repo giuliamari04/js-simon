@@ -45,8 +45,8 @@ body {
 }
 
 .orologio{
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     background-image: url(../img/orologio-senzalancette.jpg);
     background-size: cover;
     border: 3px solid black;
