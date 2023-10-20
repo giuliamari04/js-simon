@@ -10,6 +10,7 @@ function memory() {
     const numeriDaGenerare = 5;
     const max = 100;
     const min = 1;
+    const numSecondi = 30;
     const numbersArray = [];
 
 
@@ -26,14 +27,14 @@ function memory() {
     <h2>ecco l'array di numeri:</h2> 
     ${numbersArray.join(" ")}
     </br>
-    <p>hai 10 secondi per memorizzarlo</p>
+    <p>hai ${numSecondi} secondi per memorizzarlo</p>
     `;
 
     setTimeout(function () {
         numbers.textContent = "";
         inputContainer.classList.remove('d-none');
         numberInput.focus();
-    }, 2 * 1000);
+    }, numSecondi * 1000);
 
     btn.addEventListener("click", function () {
         inputContainer.classList.add('d-none');
